@@ -6,12 +6,15 @@
     <meta name="description" content="Graphic and Web designer portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -20,14 +23,75 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    
+    <!--**************************** TODO LISTS ************************************************
+
+      Single page / Responsive / Full screen page / Card style
+      Ref - http://dotrex.co/theme-preview/cards/
+
+      ******************************************************************************************
+      1. Preloading
+      3. Base             ==> Logo top left with retangle border / Full bg
+      4. Resume           ==> Detail about me / Education / Experience
+      5. Skill            ==> Skill sets
+      6. Showcase         ==> Golden ratio thumb / Modal pop up with work detail
+      7. Contact          ==> Static contact form to e-mail
+      8. Footer           ==> Coppy right
+    -->
+
+    <!-- ===========================
+            PRELOADER PAGE
+    ============================= -->
+    <div class="loader" id="page-loader">
+      <div class="loader-wrapper text-center">
+        <div class="loader-anim">
+          <div class="cssload-dots">
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+            <div class="cssload-dot"></div>
+          </div>
+
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7" result="goo" ></feColorMatrix>
+                <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+              </filter>
+            </defs>
+          </svg>
+        </div><!-- /.loader -->
+
+        <div class="loader-name" id="loader-name">
+          <h1><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+        </div><!-- /.loader-name -->
+
+        <div class="loader-job" id="loader-job">
+          <small>Graphic & Web designer</small>
+        </div><!-- /.loader-job -->
+      </div><!-- /.loader-wrapper -->
+    </div><!-- /.loader-container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
