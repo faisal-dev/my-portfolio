@@ -23,6 +23,77 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <!-- Critical css -->
+    <style>
+      body {
+        background: url('images/main-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      body:after {
+        background-color: rgba(0, 0, 0, 0.6);
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .brand-logo {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 5px solid #fff;
+        color: #fff;
+        padding: 1rem 2rem;
+        position: absolute;
+        z-index: 99;
+        margin-top: 2rem;
+      }
+      .brand-logo h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .desktop-menu {
+        left: 15%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+      }
+
+      .desktop-menu .nav > li > a {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+      }
+
+      .profile {
+        background-color: #fff;
+      }
+
+      .card {
+        padding: 2rem;
+      }
+
+      .home-container {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        text-align: center;
+        z-index: 999;
+      }
+
+      .avartar-circle {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -36,7 +107,7 @@
 
       ******************************************************************************************
       1. Preloading                                                                   /
-      3. Base             ==> Logo top left with retangle border / Full bg
+      3. Base             ==> Logo top left with retangle border / Body Full bg
       4. Resume           ==> Detail about me / Education / Experience
       5. Skill            ==> Skill sets
       6. Showcase         ==> Golden ratio thumb / Modal pop up with work detail
@@ -84,11 +155,51 @@
             MAIN CONTENT
     ============================= -->
 
-    <main class="main-container full-bg" id="main-container">
-      <div class="container-fluid main-wrapper">
-      
+    <main class="main-container" id="main-container">
+      <div class="container-fluid">
+        <div class="brand-logo">
+          <h1 class="h3"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+        </div><!-- /.brand-logo -->
       </div><!-- /.container-fluid -->
-    </main>
+
+      <nav class="desktop-menu hidden-xs">
+        <ul class="nav desktop-menu-lists">
+          <li class="actived"><a href="#">HOME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">SKILL</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav><!-- /.desktop-menu -->
+
+      <section class="container-fluid">
+        <div class="home-container">
+          <div class="row">
+            <div class="">
+              <div class="profile card col-md-6 col-md-offset-6">
+                <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
+                <h3 class="text-greeting h1">Hi, I'm Faisal Jeaumar</h3>
+                <p class="lead">Web Designer & Developer</p>
+                <hr>
+                <p class="detail">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
+                  odit accusantium ipsum quidem, deserunt vel repellendus.
+                </p>
+                <addres class="contact">
+                  <p class="email">Faisal.jeaumar@gmail.com</p>
+                  <p class="phone">087-7174080</p>
+                </addres>
+                <div class="socials-grp">
+                  <span class="icon icon-behance"><a href="#">Behance</a></span>
+                  <span class="icon icon-github"><a href="#">Github</a></span>
+                  <span class="icon icon-linkin"><a href="#">Linkin</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.home-container -->
+      </section><!-- /.container-fluid -->
+    </main><!-- /.mainj-container -->
 
 
 
