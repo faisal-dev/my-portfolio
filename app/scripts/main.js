@@ -15,4 +15,26 @@
     }, 5000);
   });
 
+  // Main plugin
+  $(document).ready(function() {
+    // Initit Perfect scroll
+    $('.card').perfectScrollbar();
+
+
+    // Change contents
+    function resetCardBlock() {
+      $('.card-block-home').removeClass('slide-left');
+      $('.card-block-alter').removeClass('slide-right');
+    }
+
+    $('a[href="#home"]').on('click', function() {
+      resetCardBlock();
+    });
+
+    $('a[href="#resume"]').on('click', function() {
+      $('.card-block-home').addClass('slide-left');
+      $('.card-block-alter').addClass('slide-right');
+    });
+  });
+
 })(jQuery);
