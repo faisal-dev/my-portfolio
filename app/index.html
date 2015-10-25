@@ -33,11 +33,12 @@
 
       body:after {
         background-color: rgba(0, 0, 0, 0.6);
+        background-attachment: fixed;
         content: '';
         display: block;
         height: 100%;
         left: 0;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
       }
@@ -46,10 +47,10 @@
         background-color: rgba(255, 255, 255, 0.2);
         border: 5px solid #fff;
         color: #fff;
+        margin-top: 2rem;
         padding: 1rem 2rem;
         position: absolute;
         z-index: 99;
-        margin-top: 2rem;
       }
       .brand-logo h1 {
         margin-bottom: 0;
@@ -57,19 +58,19 @@
       }
 
       .desktop-menu {
-        left: 15%;
+        left: 10%;
         position: absolute;
         text-align: center;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 999;
+        margin-top: 8rem;
+        z-index: 1000;
       }
 
       .desktop-menu .nav > li > a {
-        background-color: rgba(0, 0, 0, 0.4);
-        border-radius: 50px;
-        margin-bottom: 1rem;
-        padding: 1rem 2rem;
+        color: #fff;
+      }
+
+      .desktop-menu .nav > li > a:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, .4);
       }
 
       .profile {
@@ -81,9 +82,8 @@
       }
 
       .home-container {
+        margin-top: 2rem;
         position: absolute;
-        transform: translateY(-50%);
-        top: 50%;
         text-align: center;
         z-index: 999;
       }
@@ -158,7 +158,7 @@
     <main class="main-container" id="main-container">
       <div class="container-fluid">
         <div class="brand-logo">
-          <h1 class="h3"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+          <h1 class="h4"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
         </div><!-- /.brand-logo -->
       </div><!-- /.container-fluid -->
 
@@ -173,31 +173,29 @@
       </nav><!-- /.desktop-menu -->
 
       <section class="container-fluid">
-        <div class="home-container">
-          <div class="row">
-            <div class="">
-              <div class="profile card col-md-6 col-md-offset-6">
-                <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
-                <h3 class="text-greeting h1">Hi, I'm Faisal Jeaumar</h3>
-                <p class="lead">Web Designer & Developer</p>
-                <hr>
-                <p class="detail">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
-                  odit accusantium ipsum quidem, deserunt vel repellendus.
-                </p>
-                <addres class="contact">
-                  <p class="email">Faisal.jeaumar@gmail.com</p>
-                  <p class="phone">087-7174080</p>
-                </addres>
-                <div class="socials-grp">
-                  <span class="icon icon-behance"><a href="#">Behance</a></span>
-                  <span class="icon icon-github"><a href="#">Github</a></span>
-                  <span class="icon icon-linkin"><a href="#">Linkin</a></span>
-                </div>
+        <div class="row">
+          <div class="home-container col-xs-12">
+            <div class="profile card col-md-4 col-md-offset-3">
+              <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
+              <h3 class="text-greeting h1">Hi, I'm Faisal Jeaumar</h3>
+              <p class="lead">Web Designer & Developer</p>
+              <hr>
+              <p class="detail">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
+                odit accusantium ipsum quidem, deserunt vel repellendus.
+              </p>
+              <addres class="contact">
+                <p class="email">Faisal.jeaumar@gmail.com</p>
+                <p class="phone">087-7174080</p>
+              </addres>
+              <div class="socials-grp">
+                <span class="icon icon-behance"><a href="#">Behance</a></span>
+                <span class="icon icon-github"><a href="#">Github</a></span>
+                <span class="icon icon-linkin"><a href="#">Linkin</a></span>
               </div>
             </div>
-          </div>
-        </div><!-- /.home-container -->
+          </div><!-- /.home-container -->
+        </div><!-- /.row -->
       </section><!-- /.container-fluid -->
     </main><!-- /.mainj-container -->
 
