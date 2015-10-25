@@ -20,20 +20,29 @@
     // Initit Perfect scroll
     $('.card').perfectScrollbar();
 
+    // Change card contents
 
-    // Change contents
-    function resetCardBlock() {
-      $('.card-block-home').removeClass('slide-left');
-      $('.card-block-alter').removeClass('slide-right');
+    function slideCard(curAnchor, anchor) {
+
+      if(anchor ==='#home') {
+        $('.card-left').removeClass('slide-left');
+        $('.card-right').removeClass('slide-right');
+        return;
+      }
+
+      $('.slide-right').removeClass('slide-right');
+      $('#home').addClass('slide-left')
+      $(anchor).addClass('slide-right');
     }
 
-    $('a[href="#home"]').on('click', function() {
-      resetCardBlock();
-    });
+    $('a').on('click', function(e) {
+      e.preventDefault();
 
-    $('a[href="#resume"]').on('click', function() {
-      $('.card-block-home').addClass('slide-left');
-      $('.card-block-alter').addClass('slide-right');
+      var curAnchor = $('.actived');
+      var anchor = $(this).attr('href');
+      curAnchor.removeClass('actived');
+      $(this).parent().addClass('actived');
+      slideCard(curAnchor, anchor);
     });
   });
 

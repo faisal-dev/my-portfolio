@@ -58,16 +58,24 @@
         margin-top: 0;
       }
 
+      .main-container {
+        padding-top: 8rem;
+      }
+
       .desktop-menu {
         left: 5rem;
+        margin-top: 8rem;
         position: absolute;
         text-align: center;
-        margin-top: 8rem;
         z-index: 1000;
       }
 
       .desktop-menu .nav > li > a {
         color: rgba(255, 255, 255, .8);
+      }
+
+      .actived {
+        background-color: rgba(255, 255, 255, 0.2);
       }
 
       .desktop-menu .nav > li > a:hover,
@@ -80,40 +88,35 @@
         border-bottom: 1px solid rgba(255, 255, 255, .4);
       }
 
-      .card-block {
-        left: 30%;
-        position: absolute;
-        transition: all 0.5s ease;
-        width: 40%;
-      }
-
-      .card-block-home {
+      .card-left {
         z-index: 100;
       }
 
-      .card-block-alter {
+      .card-right {
         z-index: 99;
-        opacity: 0;
+        opacity: 1;
       }
 
       .slide-left {
-        left: 10%;
+        left: 20% !important;
       }
 
       .slide-right {
-        left: 51%;
-        opacity: 1;
+        left: 51% !important;
+        opacity: 1 !important;
       }
 
       .card {
         background-color: #fff;
-        padding: 2rem 4rem;
         height: auto;
+        margin-bottom: 1rem;
+        padding: 2rem 4rem;
         position: relative;
+        text-align: center;
+        transition: all 1s ease;
       }
 
       .contents-container {
-        margin-top: 8rem;
         position: absolute;
         text-align: center;
         z-index: 999;
@@ -136,9 +139,17 @@
         margin-top: 2rem;
       }
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 992px) {
         .card {
           height: 600px;
+          left: 40%;
+          margin-bottom: 0;
+          position: absolute;
+          width: 30%;
+        }
+
+        .card-right {
+          opacity: 0;
         }
       }
     </style>
@@ -202,60 +213,75 @@
     </div><!-- /.loader-container -->
 
 
+
+
+    <!-- ===========================
+            NAVIGATIONS
+    ============================= -->
+    <div class="brand-logo">
+      <h1 class="h4"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+    </div><!-- /.brand-logo -->
+
+    <nav class="desktop-menu hidden-xs">
+      <ul class="nav desktop-menu-lists">
+        <li class="actived"><a href="#home">HOME</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav><!-- /.desktop-menu -->
+
+
+
+
     <!-- ===========================
             MAIN CONTENT
     ============================= -->
 
-    <divclass="main-container" id="main-container">
+    <div class="main-container" id="main-container">
       <div class="container-fluid">
-        <div class="brand-logo">
-          <h1 class="h4"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
-        </div><!-- /.brand-logo -->
 
-        <nav class="desktop-menu hidden-xs">
-          <ul class="nav desktop-menu-lists">
-            <li class="actived"><a href="#home">HOME</a></li>
-            <li><a href="#resume">RESUME</a></li>
-            <li><a href="#skill">SKILL</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav><!-- /.desktop-menu -->
+        <div class="card card-left" id="home">
+          <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
+          <h3 class="text-hilight h1">HELLO !</h3>
+          <p class="lead">I'M GRAPHIC & WEB DESIGNER</p>
+          <hr>
+          <p class="detail">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
+            odit accusantium ipsum quidem, deserunt vel repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam dicta provident omnis voluptas laborum natus, porro doloribus reprehenderit non?
+          </p>
+          <hr>
+          <addres class="contact">
+            <span class="glyphicon glyphicon-phone"></span>087-7174080 |
+            <span class="glyphicon glyphicon-envelope"></span> Faisal.jeaumar@gmail.com
+          </addres>
+          <div class="socials-grp">
+            <a href="#"><span class="icon icon-behance"></span><p class="scr-only">Behance</p></a>
+            <a href="#"><span class="icon icon-github"></span><p class="scr-only">Github</p></a>
+            <a href="#"><span class="icon icon-linkin"></span><p class="scr-only">Linkin</p></a>
+          </div>
+        </div><!-- /.#home -->
 
-        <div class="row">
-          <div class="contents-container col-md-8 col-md-offset-2">
-            <div class="row">
-              <div class="card-block card-block-home" id="home">
-                <div class="card">
-                  <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
-                  <h3 class="text-hilight h1">HELLO !</h3>
-                  <p class="lead">I'M GRAPHIC & WEB DESIGNER</p>
-                  <hr>
-                  <p class="detail">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
-                    odit accusantium ipsum quidem, deserunt vel repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam dicta provident omnis voluptas laborum natus, porro doloribus reprehenderit non?
-                  </p>
-                  <hr>
-                  <addres class="contact">
-                    <span class="glyphicon glyphicon-phone"></span>087-7174080 |
-                    <span class="glyphicon glyphicon-envelope"></span> Faisal.jeaumar@gmail.com
-                  </addres>
-                  <div class="socials-grp">
-                    <a href="#"><span class="icon icon-behance"></span><p class="scr-only">Behance</p></a>
-                    <a href="#"><span class="icon icon-github"></span><p class="scr-only">Github</p></a>
-                    <a href="#"><span class="icon icon-linkin"></span><p class="scr-only">Linkin</p></a>
-                  </div>
-                </div>
-              </div><!-- /#home -->
+        <div class="card card-right" id="resume">
+          <h1>RESUME</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+        </div><!-- /.#resume -->
 
-              <div class="card-block card-block-alter" id="resume">
-                <div class="card">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
-                </div>
-              </div><!-- /#resume -->
-            </div>
-          </div><!-- /.contents-container -->
-        </div><!-- /.row -->
+        <div class="card card-right" id="skill">
+          <h1>SKILL</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+        </div><!-- /.#skill -->
+
+        <div class="card card-right" id="portfolio">
+          <h1>PORTFOLIO</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+        </div><!-- /.#portfolio -->
+
+        <div class="card card-right" id="contact">
+          <h1>CONTACT</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+        </div><!-- /.#contact -->
       </div><!-- /.container-fluid -->
     </div><!-- /.main-container -->
 
