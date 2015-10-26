@@ -52,6 +52,16 @@
         width: 100%;
       }
 
+      /* to make scrollbars always visible with .always-visible */
+      /*.always-visible.ps-container > .ps-scrollbar-x-rail,
+      .always-visible.ps-container > .ps-scrollbar-y-rail {
+        opacity: 0.6;
+      }*/
+      /* Fixed card stack prevent scrollY */
+      .js-z-index {
+        z-index: 1000 !important;
+      }
+
       .detail {
         letter-spacing: 1px;
         line-height: 1.6;
@@ -106,9 +116,9 @@
       }
 
       .card-right {
-        z-index: 99;
         opacity: 1;
         text-align: left;
+        z-index: 999;
       }
 
       .slide-left {
@@ -190,6 +200,7 @@
       Single page / Responsive / Full screen page / Card style
       Ref - http://dotrex.co/theme-preview/cards/
           - http://codepen.io/gianmichelle/pen/xpwEh/
+          - https://www.youtube.com/watch?v=mqiH0ZSkM9I
 
       ******************************************************************************************
       1. Preloading                                                                   /
@@ -322,24 +333,209 @@
           <hr>
           <h3>Professional</h3>
           <ul class="lists">
-            <li>UX/UI Design</li>
-            <li>Web developments</li>
-            <li>Motions editing</li>
-            <li>Photography</li>
-          </ul>
+            <li class="row">
+              <div class="col-xs-4">
+                UX/UI Design
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Web developments
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Motions editing
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Photography
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                    65%
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul><!-- /.professional -->
+          <hr>
           <h3>Graphic</h3>
           <ul class="lists">
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Lightroom</li>
-            <li>After effect</li>
-            <li>Maya</li>
+            <li class="row">
+              <div class="col-xs-4">
+                Photoshop
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Illustrator
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Lightroom
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                After effect
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                Maya
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                    65%
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
+          <hr>
           <h3>Programing</h3>
           <ul class="lists">
-            <li>HTML / CSS / SASS</li>
-            <li>Javascript / jQuery</li>
-            <li>MEAN stacks</li>
+            <li class="row">
+              <div class="col-xs-4">
+                HTML
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    85%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                CSS
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    85%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                SASS
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                    75%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                JS
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                jQuery
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                    65%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-xs-4">
+                MEAN stack
+              </div>
+              <div class="col-xs-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    50%
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div><!-- /.#skill -->
 

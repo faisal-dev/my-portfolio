@@ -30,9 +30,9 @@
         return;
       }
 
-      $('.slide-right').removeClass('slide-right');
-      $('#home').addClass('slide-left')
-      $(anchor).addClass('slide-right');
+      $('.slide-right').removeClass('slide-right js-z-index');
+      $('#home').addClass('slide-left');
+      $(anchor).addClass('slide-right js-z-index');
     }
 
     $('a').on('click', function(e) {
