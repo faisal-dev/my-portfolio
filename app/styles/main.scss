@@ -20,8 +20,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import 'mixins';
 
 // Base style
+@import 'layouts';
 @import 'types';
 
 // Components
+@import 'lists';
 @import 'images';
 @import 'page-loader';

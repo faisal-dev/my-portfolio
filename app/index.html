@@ -87,6 +87,7 @@
       .desktop-menu .nav > li > a {
         color: rgba(255, 255, 255, .8);
         border: 1px solid rgba(255, 255, 255, .6);
+        margin-bottom: 0.5rem;
       }
 
       .actived {
@@ -99,17 +100,15 @@
         background-color: transparent;
       }
 
-/*      .desktop-menu li:not(:last-child) {
-        border-bottom: 1px solid rgba(255, 255, 255, .4);
-      }*/
-
       .card-left {
         z-index: 100;
+        text-align: center;
       }
 
       .card-right {
         z-index: 99;
         opacity: 1;
+        text-align: left;
       }
 
       .slide-left {
@@ -128,13 +127,11 @@
         margin-bottom: 1rem;
         padding: 2rem 4rem;
         position: relative;
-        text-align: center;
         transition: all 1s ease;
       }
 
       .contents-container {
         position: absolute;
-        text-align: center;
         z-index: 999;
       }
 
@@ -295,21 +292,66 @@
 
         <div class="card card-right" id="resume">
           <h1>RESUME</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+          <hr>
+          <div class="block">
+            <h3>Education</h3>
+            <p>RMUTT. Beacherlor Multimedia | 2008-2012</p>
+          </div>
+          <div class="block">
+            <h3>Work experience</h3>
+            <h4>Craetivemax studio | 2012-2012</h4>
+            <p>3D modeling / 3D Animator</p>
+            <h4>Coffee shop | 2013-2013</h4>
+            <p>Service</p>
+            <h4>Suksapan | 2014-2015</h4>
+            <p>
+              Graphic designer
+              Ar book developer
+            </p>
+          </div>
+          <div class="block">
+            <h3>Seminar</h3>
+            <p>Sipa animation couse | 2012</p>
+            <p>Sipa 3D lighting | 2012</p>
+            <p>SEO for SMEs</p>
+          </div>
         </div><!-- /.#resume -->
 
         <div class="card card-right" id="skill">
-          <h1>SKILL</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
+          <h1>SKILLS</h1>
+          <hr>
+          <h3>Professional</h3>
+          <ul class="lists">
+            <li>UX/UI Design</li>
+            <li>Web developments</li>
+            <li>Motions editing</li>
+            <li>Photography</li>
+          </ul>
+          <h3>Graphic</h3>
+          <ul class="lists">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Lightroom</li>
+            <li>After effect</li>
+            <li>Maya</li>
+          </ul>
+          <h3>Programing</h3>
+          <ul class="lists">
+            <li>HTML / CSS / SASS</li>
+            <li>Javascript / jQuery</li>
+            <li>MEAN stacks</li>
+          </ul>
         </div><!-- /.#skill -->
 
         <div class="card card-right" id="portfolio">
           <h1>PORTFOLIO</h1>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
         </div><!-- /.#portfolio -->
 
         <div class="card card-right" id="contact">
           <h1>CONTACT</h1>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
         </div><!-- /.#contact -->
       </div><!-- /.container-fluid -->
