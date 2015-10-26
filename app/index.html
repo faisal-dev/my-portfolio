@@ -6,7 +6,8 @@
     <meta name="description" content="Graphic and Web designer portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet'>
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -27,6 +28,13 @@
 
     <!-- Critical css -->
     <style>
+      @import url(http://weloveiconfonts.com/api/?family=entypo);
+
+      /* zocial */
+      [class*="zocial-"]:before {
+        font-family: 'entypo', sans-serif;
+      }
+
       body {
         background: url('images/main-bg.jpg') no-repeat center center fixed;
         background-size: cover;
@@ -44,11 +52,17 @@
         width: 100%;
       }
 
+      .detail {
+        letter-spacing: 1px;
+        line-height: 1.6;
+        text-align: justify;
+      }
+
       .brand-logo {
-        background-color: rgba(255, 255, 255, 0.2);
-        border: 5px solid #fff;
+        border: 1px solid #fff;
         color: #fff;
         margin-top: 2rem;
+        margin-left: 2rem;
         padding: 1rem 2rem;
         position: absolute;
         z-index: 99;
@@ -72,6 +86,7 @@
 
       .desktop-menu .nav > li > a {
         color: rgba(255, 255, 255, .8);
+        border: 1px solid rgba(255, 255, 255, .6);
       }
 
       .actived {
@@ -84,9 +99,9 @@
         background-color: transparent;
       }
 
-      .desktop-menu li:not(:last-child) {
+/*      .desktop-menu li:not(:last-child) {
         border-bottom: 1px solid rgba(255, 255, 255, .4);
-      }
+      }*/
 
       .card-left {
         z-index: 100;
@@ -108,6 +123,7 @@
 
       .card {
         background-color: #fff;
+        border-top: 5px solid #0da8CC;
         height: auto;
         margin-bottom: 1rem;
         padding: 2rem 4rem;
@@ -127,6 +143,7 @@
         border-radius: 50%;
         box-shadow: 0 0 0 2px #000;
         height: 200px;
+        margin-top: 3rem;
         width: 200px;
       }
 
@@ -134,14 +151,26 @@
         margin-right: 1rem;
       }
 
-      .socials-grp a {
+      .socials-grp {
+        padding-left: 0;
+      }
+
+      .socials-grp li {
+        background-color: #eee;
         display: inline-block;
-        margin-top: 2rem;
+        list-style: none;
+        margin: 2rem 0.5rem 0;
+        padding: 2rem 2.5rem;
+        transition: all 1s ease;      }
+
+      .socials-grp li:hover {
+        border-radius: 50px;
+        transform: rotate(360deg);
       }
 
       @media screen and (min-width: 992px) {
         .card {
-          height: 600px;
+          height: 780px;
           left: 40%;
           margin-bottom: 0;
           position: absolute;
@@ -163,6 +192,7 @@
 
       Single page / Responsive / Full screen page / Card style
       Ref - http://dotrex.co/theme-preview/cards/
+          - http://codepen.io/gianmichelle/pen/xpwEh/
 
       ******************************************************************************************
       1. Preloading                                                                   /
@@ -207,7 +237,7 @@
         </div><!-- /.loader-name -->
 
         <div class="loader-job" id="loader-job">
-          <small>Graphic & Web designer</small>
+          <small>UX/UI DESIGNER & WEB DEVELOPER</small>
         </div><!-- /.loader-job -->
       </div><!-- /.loader-wrapper -->
     </div><!-- /.loader-container -->
@@ -245,22 +275,22 @@
         <div class="card card-left" id="home">
           <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
           <h3 class="text-hilight h1">HELLO !</h3>
-          <p class="lead">I'M GRAPHIC & WEB DESIGNER</p>
+          <p class="lead">UX/UI & WEB DEVELOPER</p>
           <hr>
           <p class="detail">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorum sint nemo accusamus
-            odit accusantium ipsum quidem, deserunt vel repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis totam dicta provident omnis voluptas laborum natus, porro doloribus reprehenderit non?
+            I'm Looking for job that funny and challenge. I love to working with creative people who have positive energy. In generally I have a good skill both on graphic design and coding with a some business ideas. My streght is design PSD template and make it to simple HTML/CSS but I can build a web application with MEAN stack technology too.
+            I have some experienced in graphic design job but a little in web development. So I started to learn coding by myself. Now I think I have already to working in real world. As you can see all of my demo project <a href="#portfolio">here</a>.
           </p>
           <hr>
           <addres class="contact">
             <span class="glyphicon glyphicon-phone"></span>087-7174080 |
             <span class="glyphicon glyphicon-envelope"></span> Faisal.jeaumar@gmail.com
           </addres>
-          <div class="socials-grp">
-            <a href="#"><span class="icon icon-behance"></span><p class="scr-only">Behance</p></a>
-            <a href="#"><span class="icon icon-github"></span><p class="scr-only">Github</p></a>
-            <a href="#"><span class="icon icon-linkin"></span><p class="scr-only">Linkin</p></a>
-          </div>
+          <ul class="socials-grp">
+            <a href="#"><li class="entypo-behance"><p class="sr-only">Behance</p></li></a>
+            <a href="#"><li class="entypo-github"><p class="sr-only">Github</p></li></a>
+            <a href="#"><li class="entypo-linkedin"><p class="sr-only">Linkin</p></li></a>
+          </ul>
         </div><!-- /.#home -->
 
         <div class="card card-right" id="resume">
