@@ -26,4 +26,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // Components
 @import 'lists';
 @import 'images';
-@import 'page-loader';
+
+// plugin
+@import 'coverr';
