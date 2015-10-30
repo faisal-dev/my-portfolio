@@ -1,0 +1,19 @@
+// --------------------------------
+//
+//          GENERALS
+//
+//---------------------------------
+
+body {
+  &::after {
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}

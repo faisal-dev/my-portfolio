@@ -1,0 +1,30 @@
+// --------------------------------
+//
+//          MENUS
+//
+//---------------------------------
+
+.desktop-menu {
+  left: 5rem;
+  margin-top: 8rem;
+  position: absolute;
+  text-align: center;
+  z-index: 1000;
+
+  .actived {
+    background-color: rgba($white, .2);
+  }
+
+  .nav > li > a {
+    border: 1px solid rgba($white, .6);
+    color: rgba($white, .8);
+    margin-bottom: .5rem;
+  }
+
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background-color: transparent;
+    color: $white;
+    outline: none;
+  }
+}

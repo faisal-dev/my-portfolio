@@ -528,114 +528,9 @@
         font-family: 'entypo', sans-serif;
       }
 
-/*      body {
-        background: url('images/main-bg.jpg') no-repeat center center fixed;
-        background-size: cover;
-      }*/
-
-      body:after {
-        background-color: rgba(0, 0, 0, 0.6);
-        background-attachment: fixed;
-        content: '';
-        display: block;
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
-      /* to make scrollbars always visible with .always-visible */
-      /*.always-visible.ps-container > .ps-scrollbar-x-rail,
-      .always-visible.ps-container > .ps-scrollbar-y-rail {
-        opacity: 0.6;
-      }*/
       /* Fixed card stack prevent scrollY */
       .js-z-index {
         z-index: 1000 !important;
-      }
-
-      .detail {
-        letter-spacing: 0.8px;
-        line-height: 1.6;
-        text-align: justify;
-      }
-
-      .brand-logo {
-        border: 1px solid #fff;
-        color: #fff;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        padding: 1rem 2rem;
-        position: absolute;
-        z-index: 99;
-      }
-      .brand-logo h1 {
-        margin-bottom: 0;
-        margin-top: 0;
-      }
-
-/*      .main-container {
-        padding-top: 8rem;
-        position: absolute;
-        top: 0;
-      }*/
-
-      .desktop-menu {
-        left: 5rem;
-        margin-top: 8rem;
-        position: absolute;
-        text-align: center;
-        z-index: 1000;
-      }
-
-      .desktop-menu .nav > li > a {
-        color: rgba(255, 255, 255, .8);
-        border: 1px solid rgba(255, 255, 255, .6);
-        margin-bottom: 0.5rem;
-      }
-
-      .actived {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .desktop-menu .nav > li > a:hover,
-      .desktop-menu .nav > li > a:focus {
-        color: #fff;
-        background-color: transparent;
-        outline: none;
-      }
-
-      .card-left {
-        z-index: 1001;
-        text-align: center;
-      }
-
-      .card-right {
-        opacity: 1;
-        text-align: left;
-        z-index: 999;
-      }
-
-      .slide-left {
-        left: 20% !important;
-      }
-
-      .slide-right {
-        left: 51% !important;
-        opacity: 1 !important;
-      }
-
-      .card {
-        background-color: #fff;
-        border-bottom: 8px solid #eee;
-        border-top: 5px solid #0da8CC;
-        box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4);
-        height: auto;
-        margin-bottom: 1rem;
-        padding: 2rem 4rem;
-        position: relative;
-        transition: all 1s ease;
       }
 
       .contents-container {
@@ -648,33 +543,7 @@
         border-radius: 50%;
         box-shadow: 0 0 0 2px #000;
         height: 150px;
-        margin-top: 3rem;
         width: 150px;
-      }
-
-      .glyphicon {
-        margin-right: 0.8rem;
-      }
-
-      .socials-grp {
-        padding-left: 0;
-      }
-
-      .socials-grp li {
-        background-color: #eee;
-        display: inline-block;
-        list-style: none;
-        margin: 2rem 0.5rem 0;
-        padding: 2rem 2rem;
-        transition: all 1s ease;      }
-
-      .socials-grp li:hover {
-        border-radius: 50px;
-        transform: rotate(360deg);
-      }
-
-      .txt-sm {
-        font-size: 0.9em;
       }
 
       .bd-circle {
@@ -683,21 +552,13 @@
         padding: 0.5rem
       }
 
+      .main-container {
+        padding-top: 8rem;
+      }
+
       @media screen and (min-width: 992px) {
         .main-container {
           padding-top: 2rem;
-        }
-
-        .card {
-          height: 580px;
-          left: 40%;
-          margin-bottom: 0;
-          position: absolute;
-          width: 30%;
-        }
-
-        .card-right {
-          opacity: 0;
         }
       }
     </style>
@@ -753,7 +614,7 @@
         </div><!-- /.loader -->
 
         <div class="loader-name" id="loader-name">
-          <h1><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+          <h1><span class="txt-hilight">FAISAL</span> JEAUMAR</h1>
         </div><!-- /.loader-name -->
 
         <div class="loader-job" id="loader-job">
@@ -769,7 +630,7 @@
             NAVIGATIONS
     ============================= -->
     <div class="brand-logo">
-      <h1 class="h4"><span class="text-hilight">FAISAL</span> JEAUMAR</h1>
+      <h1 class="h4"><span class="txt-hilight">FAISAL</span> JEAUMAR</h1>
     </div><!-- /.brand-logo -->
 
     <nav class="desktop-menu hidden-xs">
@@ -809,12 +670,12 @@
 
         <div class="card card-left" id="home">
           <img class="avartar-circle" src="http://api.adorable.io/avatars/200/abott@adorable.io.png" alt="my-avartar" height="100%" width="100%">
-          <h3 class="text-hilight h1">HELLO !</h3>
+          <h3 class="txt-hilight h1">HELLO !</h3>
           <p class="lead">UX/UI & WEB DEVELOPER</p>
           <hr>
-          <p class="detail">
-            I'm Looking for job that funny and challenge.
-            I love to working with creative people who have positive energy. <a href="#portfolio">My demo work here.</a>
+          <p class="txt-detail text-justify">
+            I'm Looking for funny and challenge job.
+            I like to work around people who have a great ideas. Love to follow the lastest trend in web development. You can see my example work <a href="#portfolio">here.</a>
           </p>
           <hr>
           <addres class="txt-sm">
@@ -829,39 +690,39 @@
         </div><!-- /.#home -->
 
         <div class="card card-right" id="resume">
-          <h1>RESUME</h1>
+          <h1 class="txt-h-sec">RESUME</h1>
+          <a class="btn btn-default" href="asset/resume.pdf">Download Resume</a>
           <hr>
-          <p class="detail">
-            In generally I have a good skill both on graphic design and coding with a some business   ideas. My streght is design PSD template and make it to simple HTML/CSS but I can build a web   application with MEAN stack technology too.
-            I have some experienced in graphic design job but a little in web development. So I started to learn coding by myself. Now I think I have already to working in real world. As you can see all of my demo project
+          <p class="txt-detail text-justify">
+            I have some experienced in graphic design and never coding before.But it's look funny to learn coding. So I started to learn coding by myself. Now I think I have already to working in real world. I have a good skills both on visual design and coding as you can see all of my demo project. I can mockup to PSD template and make it to a real website.
           </p>
-          <hr>
+          <h3>/ Education</h3>
           <div class="block">
-            <h3>Education</h3>
-            <p>RMUTT. Beacherlor Multimedia | 2008-2012</p>
+            <h4>RMUTT | 2009-2013</h4>
+            <p class="txt-detail">Bacherlor of Technology(Multimedia Technology)</p>
           </div>
+
+          <h3>/ Experience</h3>
           <div class="block">
-            <h3>Work experience</h3>
-            <h4>Craetivemax studio | 2012-2012</h4>
-            <p>3D modeling / 3D Animator</p>
-            <h4>Coffee shop | 2013-2013</h4>
-            <p>Service</p>
+            <h4>Craetivemax studio | 2012</h4>
+            <p class="txt-detail">3D modeling / 3D Animator</p>
+            <hr>
+            <h4>Own business | 2013</h4>
+            <p class="txt-detail">Coffee shop</p>
+            <hr>
             <h4>Suksapan | 2014-2015</h4>
-            <p>
-              Graphic designer
-              Ar book developer
-            </p>
+            <p class="txt-detail">Graphic designer / Ar book developer</p>
           </div>
-          <div class="block">
+<!--           <div class="block">
             <h3>Seminar</h3>
             <p>Sipa animation couse | 2012</p>
             <p>Sipa 3D lighting | 2012</p>
             <p>SEO for SMEs</p>
-          </div>
+          </div> -->
         </div><!-- /.#resume -->
 
         <div class="card card-right" id="skill">
-          <h1>SKILLS</h1>
+          <h1 class="txt-h-sec">SKILLS</h1>
           <hr>
           <h3>Professional</h3>
           <ul class="lists">
@@ -1059,13 +920,13 @@
         </div><!-- /.#skill -->
 
         <div class="card card-right" id="portfolio">
-          <h1>PORTFOLIO</h1>
+          <h1 class="txt-h-sec">PORTFOLIO</h1>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
         </div><!-- /.#portfolio -->
 
         <div class="card card-right" id="contact">
-          <h1>CONTACT</h1>
+          <h1 class="txt-h-sec">CONTACT</h1>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta omnis facere, impedit, sequi in, similique illo eos odio earum adipisci quasi modi ex deleniti eaque unde! Quod magnam laboriosam saepe laborum eius ipsa accusantium deserunt veritatis obcaecati dignissimos. Provident rem eaque, ea voluptate sed est fugit tempora tenetur accusantium.</p>
         </div><!-- /.#contact -->

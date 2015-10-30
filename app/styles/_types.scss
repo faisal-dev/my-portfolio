@@ -7,6 +7,29 @@
 
 // Text-style
 // ---------------------
-.text-hilight {
-  font-family: 'Lato';
+
+.txt-h-sec {
+  color: $warm-blue;
+  font-family: 'Lato', 'Helvetica', sans-serif;
 }
+
+.txt-hilight {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+.txt-detail {
+  color: rgba($black, .6);
+  letter-spacing: .8px;
+  line-height: 1.6;
+}
+
+.txt-sm {
+  font-size: .9em;
+}
+
+// Font-icons
+// ---------------------
+.glyphicon {
+  margin-right: .8rem;
+}
+

@@ -1,0 +1,58 @@
+// --------------------------------
+//
+//          CARDS
+//
+//---------------------------------
+
+
+.card {
+  background-color: $white;
+  border-bottom: 8px solid darken($white, 5%);
+  border-top: 5px solid $warm-blue;
+  box-shadow: 0 2px 10px 1px rgba($black, .4);
+  height: auto;
+  margin-bottom: 1rem;
+  padding: 2rem 4rem;
+  position: relative;
+  transition: all 1s ease;
+
+  @media screen and (min-width: 992px) {
+    height: 580px;
+    left: 40%;
+    margin-bottom: 0;
+    position: absolute;
+    width: 30%;
+  }
+
+  h3 {
+    color: $warm-blue;
+  }
+
+  h4 {
+    color: rgba($black, .7);
+  }
+}
+
+.card-left {
+  text-align: center;
+  z-index: 1001;
+}
+
+.card-right {
+  opacity: 1;
+  text-align: left;
+  z-index: 999;
+
+  @media screen and (min-width: 992px) {
+    opacity: 0;
+  }
+}
+
+.slide-left {
+  left: 20% !important;
+}
+
+.slide-right {
+  left: 51% !important;
+  opacity: 1 !important;
+}

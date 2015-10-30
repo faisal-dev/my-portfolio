@@ -1,0 +1,20 @@
+// --------------------------------
+//
+//          LOGOS
+//
+//---------------------------------
+
+.brand-logo {
+  border: 1px solid $white;
+  color: $white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  z-index: 99;
+
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
