@@ -12,7 +12,7 @@
         .fadeOut(400, function() {
           return;
         });
-    }, 5000);
+    }, 500);
   });
 
   // Main plugin
@@ -21,7 +21,6 @@
     $('.card').perfectScrollbar();
 
     // Change card contents
-
     function slideCard(curAnchor, anchor) {
 
       if(anchor ==='#home') {
@@ -35,7 +34,7 @@
       $(anchor).addClass('slide-right js-z-index');
     }
 
-    $('a').on('click', function(e) {
+    $('.desktop-menu-lists > li > a').on('click', function(e) {
       e.preventDefault();
 
       var curAnchor = $('.actived');
@@ -43,6 +42,15 @@
       curAnchor.removeClass('actived');
       $(this).parent().addClass('actived');
       slideCard(curAnchor, anchor);
+    });
+
+    // Modal lightbox images
+    $('.project-thumb').click(function(){
+      $('.modal-body').empty();
+      var link = $(this).data('img');
+      var content = '<img src="images/' + link + '" width="100%">';
+      $(content).appendTo('.modal-body');
+      $('#myModal').modal({show:true});
     });
   });
 
