@@ -34,7 +34,7 @@
       $(anchor).addClass('slide-right js-z-index');
     }
 
-    $('.desktop-menu-lists > li > a').on('click', function(e) {
+    $('a').on('click', function(e) {
       e.preventDefault();
 
       var curAnchor = $('.actived');

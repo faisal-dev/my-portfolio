@@ -1,8 +1,18 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 
 .browsehappy {
   margin: 0.2em 0;

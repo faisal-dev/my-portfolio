@@ -8,19 +8,32 @@
 // Text-style
 // ---------------------
 
+.txt-header {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+.lead {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.2px;
+  color: rgba($black, .8);
+}
+
 .txt-h-sec {
   color: $warm-blue;
   font-family: 'Lato', 'Helvetica', sans-serif;
 }
 
 .txt-hilight {
-  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-family: 'bukhari', 'Lato', 'Helvetica', sans-serif;
 }
 
 .txt-detail {
+  font-size: 1.2em;
   color: rgba($black, .6);
   letter-spacing: .8px;
   line-height: 1.6;
+  font-family: 'roboto', 'Lato', 'Helvetica', sans-serif;
 }
 
 .txt-sm {
